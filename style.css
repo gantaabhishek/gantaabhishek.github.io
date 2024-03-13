@@ -1,0 +1,313 @@
+:root {
+    --main-radius: 10px;
+    --main-padding: 25px;
+    --title-font-size: 45px;
+    --theme-background: #ffffff;
+    --theme-highlight: #0000ff;
+    --theme-secondary-background: #ffffff;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--theme-background);
+    text-align:justify;
+    margin-top: 55px;
+}
+
+p {
+    margin: 0px;
+}
+
+header {
+    overflow: hidden;        
+    font-size: 22px;
+    font-weight: 500;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--theme-background);
+}
+
+header .logo {
+    float: left;               
+}
+
+header a {
+    float: right;            
+    display: block;           
+    color: #000000;        
+    text-align: center;       
+    padding: 25px;       
+    text-decoration: none;   
+}
+
+header a:hover, a:active {
+    color: var(--theme-highlight);
+}
+
+
+main {
+    margin: 0px 150px;
+}
+
+.title {
+    font-size: var(--title-font-size);
+    padding: 65px 0px 50px 0px;
+}
+
+#home { 
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+
+#home-description {
+    text-align: center;
+    font-size: 25px;   
+    line-height: 40px;
+    margin: 20px 0px; 
+}
+
+#home-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#home-title {
+    font-size: var(--title-font-size);
+}
+
+.home-contact-image {
+    height: 50px;
+    padding: 0px 25px;
+}
+
+#about-description {
+    text-align: justify;
+    font-size: 25px;   
+    line-height: 40px;
+}
+
+.project { 
+    display: flex;
+    align-items: top;
+    /* padding: var(--main-padding); */
+    background-color: var(--theme-secondary-background);
+    border-radius: var(--main-radius);
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+.project:last-child {
+    margin: 0%;
+}
+
+.project-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    margin-right: 35px;
+}
+
+.project-name {
+    font-size: 30px;  
+}
+
+.project-association {
+    font-size: 22px;   
+    line-height: 25px;
+    margin: 15px 0px 10px 0px; 
+}
+
+.project-description {
+    font-size: 18px;   
+    line-height: 25px;
+}
+
+#school-container {
+    display: flex;
+}
+
+.school { 
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* padding: var(--main-padding); */
+    background-color: var(--theme-secondary-background);
+    border-radius: var(--main-radius);
+    /* margin-bottom: 5%; */
+    box-sizing: border-box;
+}
+
+.school:last-child {
+    margin: 0%;
+}
+
+.school-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-right: 35px;
+}
+
+.school-name {
+    font-size: 30px;  
+}
+
+.school-degree {
+    font-size: 22px;   
+    line-height: 25px;
+    margin: 15px 0px 10px 0px; 
+}
+
+.school-description {
+    font-size: 18px;   
+    line-height: 25px;
+}
+
+.company { 
+    display: flex;
+    align-items: top;
+    /* padding: var(--main-padding); */
+    background-color: var(--theme-secondary-background);
+    border-radius: var(--main-radius);
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+.company:last-child {
+    margin: 0%;
+}
+
+.company-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    margin-right: 35px;
+}
+
+.company-role {
+    font-size: 30px;  
+}
+
+.company-name {
+    font-size: 22px;   
+    line-height: 25px;
+    margin: 15px 0px 10px 0px; 
+}
+
+.company-description {
+    font-size: 18px;   
+    line-height: 25px;
+}
+
+#skill-container {
+    display: flex;
+    text-align: center;
+}
+
+.skill {
+    flex: 1;
+    margin-right: var(--main-padding);
+    background-color: var(--theme-secondary-background);
+    border-radius: var(--main-radius);
+    overflow: hidden;
+}
+
+.skill:last-child {
+    margin-right: 0%;
+}
+
+.skill-image {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+.skill-title {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+    :root {
+        --title-font-size: 30px;
+    }
+
+    header {
+        font-size: 16px;
+    }
+    
+    header .logo {              
+        display: none;       
+    }
+    
+    header a {              
+        padding: 8px;       
+    }
+    
+    main {
+        margin: 0px var(--main-padding);
+    }
+
+    .title {
+        padding: 15px 0px 10px 0px;
+    }
+    
+    #home-image {
+        width: 350px;
+        height: 350px;
+    }
+
+    #home-description {
+        font-size: 20px;  
+        line-height: 30px;
+    }
+    
+    #project-container {
+        display: block;
+    }
+    
+    .project {
+        margin-bottom: var(--main-padding);
+        height: 100%;
+        width: 100%;
+    }
+    
+    .project:last-child {
+        margin-bottom: 0%;
+    }
+    
+    #company-container {
+        display: block;
+    }
+    
+    .company {
+        margin-bottom: var(--main-padding);
+    }
+    
+    .company:last-child {
+        margin-bottom: 0%;
+    }
+    
+    #skill-container {
+        display: block;
+    }
+    
+    .skill {
+        margin-bottom: var(--main-padding);
+        overflow: hidden;
+    }
+    
+    .skill:last-child {
+        margin-bottom: 0%;
+    }
+}
